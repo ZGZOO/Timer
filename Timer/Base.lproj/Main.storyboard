@@ -106,7 +106,7 @@
                     <navigationItem key="navigationItem" title="Your time" id="Iz9-Bc-Mka">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="6ol-ce-rds">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EEW-bg-tfY" userLabel="Back">
-                                <rect key="frame" x="276" y="7" width="94" height="30"/>
+                                <rect key="frame" x="265" y="7" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to home"/>
                             </button>
