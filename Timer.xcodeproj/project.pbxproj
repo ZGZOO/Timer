@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B150E1B22135105D00C7414E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B150E1B12135105D00C7414E /* test.swift */; };
 		B19B11FD2130522A0021C85B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B11FC2130522A0021C85B /* AppDelegate.swift */; };
 		B19B11FF2130522A0021C85B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B11FE2130522A0021C85B /* ViewController.swift */; };
 		B19B12022130522A0021C85B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19B12002130522A0021C85B /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		B19B120A2130522A0021C85B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19B12082130522A0021C85B /* LaunchScreen.storyboard */; };
 		B19B12152130522A0021C85B /* TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B12142130522A0021C85B /* TimerTests.swift */; };
 		B19B12202130522A0021C85B /* TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B121F2130522A0021C85B /* TimerUITests.swift */; };
+		B19B265221E145A300A7D0FC /* timerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19B265121E145A300A7D0FC /* timerHomeViewController.swift */; };
+		B1AFA3462135A075001D058A /* roundStartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AFA3452135A075001D058A /* roundStartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B150E1B12135105D00C7414E /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		B19B11F92130522A0021C85B /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19B11FC2130522A0021C85B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B19B11FE2130522A0021C85B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		B19B121B2130522A0021C85B /* TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19B121F2130522A0021C85B /* TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUITests.swift; sourceTree = "<group>"; };
 		B19B12212130522A0021C85B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19B265121E145A300A7D0FC /* timerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerHomeViewController.swift; sourceTree = "<group>"; };
+		B1AFA3452135A075001D058A /* roundStartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundStartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				B19B11FC2130522A0021C85B /* AppDelegate.swift */,
+				B150E1B12135105D00C7414E /* test.swift */,
 				B19B11FE2130522A0021C85B /* ViewController.swift */,
 				B19B12002130522A0021C85B /* Main.storyboard */,
+				B19B265121E145A300A7D0FC /* timerHomeViewController.swift */,
 				B19B12062130522A0021C85B /* Assets.xcassets */,
 				B19B12082130522A0021C85B /* LaunchScreen.storyboard */,
 				B19B120B2130522A0021C85B /* Info.plist */,
 				B19B12032130522A0021C85B /* Timer.xcdatamodeld */,
+				B1AFA3452135A075001D058A /* roundStartButton.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -266,6 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19B11FF2130522A0021C85B /* ViewController.swift in Sources */,
+				B19B265221E145A300A7D0FC /* timerHomeViewController.swift in Sources */,
+				B1AFA3462135A075001D058A /* roundStartButton.swift in Sources */,
+				B150E1B22135105D00C7414E /* test.swift in Sources */,
 				B19B12052130522A0021C85B /* Timer.xcdatamodeld in Sources */,
 				B19B11FD2130522A0021C85B /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +528,7 @@
 				B19B12262130522A0021C85B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B19B12272130522A0021C85B /* Build configuration list for PBXNativeTarget "TimerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				B19B12292130522A0021C85B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B19B122A2130522A0021C85B /* Build configuration list for PBXNativeTarget "TimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				B19B122C2130522A0021C85B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
