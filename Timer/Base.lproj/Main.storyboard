@@ -136,13 +136,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV9-tM-PPP">
-                                <rect key="frame" x="114" y="224" width="147" height="87"/>
+                                <rect key="frame" x="114" y="231" width="147" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="add your time"/>
                                 <connections>
-                                    <action selector="addTime:" destination="xcu-Ch-NP8" eventType="touchUpInside" id="4mi-14-uhE"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Tsg-tI-84Z"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zkw-S0-rdb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -155,7 +154,6 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hsb-qu-Tnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="xcu-Ch-NP8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2080.8000000000002" y="-337.78110944527737"/>
         </scene>

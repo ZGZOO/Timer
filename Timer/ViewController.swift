@@ -30,8 +30,6 @@ class ViewController: UIViewController, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var myAverage: UILabel!
     
-    
-    
     private var data : [String] = []
     
     override func viewDidLoad() {
@@ -191,15 +189,22 @@ class ViewController: UIViewController, UITableViewDataSource{
         cell?.textLabel?.text = text
         return cell!
     }
-
-    var timerEvent: UITextField?
     
-    @IBAction func addTime(_ sender: Any) {
-        let alertController = UIAlertController(title: "Enter your activity: ", message: nil, preferredStyle: .alert)
-        alertController.addTextField(configurationHandler: timerEvent)
+    @IBAction func addEvent(_ sender: Any) {
+        let alert = UIAlertController(title: "Add your event!", message: "Type your event below.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addTextField(configurationHandler: {
+            (textField) in
+            textField.placeholder = "Enter event?!"
+        })
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
+            let textf = alert.textFields![0] as UITextField
+            print(textf.text ?? "ha")
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: {(action) in
+            self.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
+    
 }
 
-func timerEvent(textField: UITextField!){
-    timerEvent = textField
-}
